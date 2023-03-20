@@ -1,0 +1,118 @@
+name: FunnyPlugin
+version: '${project.version}'
+main: quac.funnyplugin.Main
+
+commands:
+  gamestate:
+    description: Send a game state packet
+    usage: /gamestate [reason] [value]
+
+  afk:
+    description: Sends a message that you went afk
+    usage: /afk
+
+  blindness:
+    description: Adds blindness
+    usage: /blindness [ticks]
+
+  togglenightvision:
+    description: Toggles Nightvision
+    usage:  /togglenightvision
+    aliases:
+      - nv
+      - togglenv
+      - nightvision
+
+  playerinv:
+    description: Checks a players inventory
+    usage: /playerinv [player]
+
+  travelenv:
+    description: Teleport to different environment
+    usage: /travelenv [environment index]
+    aliases:
+      - env
+
+  travelworld:
+    description: Teleport to different world
+    usage: /world [world index]
+    aliases:
+      - world
+
+  createworld:
+    description: Creates a world with passed arguments
+    usage: /createworld [name] [environment index] [type] [generate structures] {void? true/false}
+
+  worlds:
+    description: Get a list of all the worlds
+    usage: /worlds
+
+  deleteworld:
+    description: Deletes a world with passed index
+    usage: /deleteworld [world index]
+
+  loop:
+    description: Loops a command
+    usage: /loop [amount] [delay] [...command]
+
+  spawnmob:
+    description: Spawns a specified mob
+    usage: /spawnmob [mobname]
+
+  rename:
+    description: Renames the item in hand
+    usage: /rename [...name]
+
+  biome:
+    description: Sets the biome around you to the passed argument
+    usage: /biome [biome]
+
+  fog:
+    description: Fog
+    usage: /fog [value]
+
+  deepfog:
+    description: Deep fog
+    usage: /deepfog [value]
+
+  givecustomitem:
+    description: Gives custom item n stuff
+    usage: /givecustomitem [item]
+    aliases:
+      - gci
+
+  recomb:
+    description: Recomb an item
+    usage: /recomb
+    aliases:
+      - recombobulate
+
+  particle:
+    description: Spawn particle
+    usage: /particle [value]
+
+  stats:
+    description: Shows your stats
+    usage: /stats
+    aliases:
+      - getstats
+
+  vanish:
+    description: Vanish
+    usage: /vanish
+    aliases:
+      - v
+
+  removenearbyentities:
+    description: Remove nearbyEntities, except players and armorstands
+    usage: /removenearbyentities
+
+  sphere:
+    description: Sphere of particle
+    usage: /sphere [ticks] {particle} {detail} {radiusMultiplier}
+
+  opencustominventory:
+    description: Opens custom inventory
+    usage: /opencustominventory
+    aliases:
+      - oci
